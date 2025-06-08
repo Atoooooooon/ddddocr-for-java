@@ -7,7 +7,8 @@
 
 </div>
 
-基于[sml2h3](https://github.com/sml2h3)开源的[ddddocr](https://github.com/sml2h3/ddddocr)构建的java开源项目。源项目只提供pypi版本，不能满足java开发者的需求，特此尝试开发本项目。
+基于[GCS-ZHN](https://github.com/GCS-ZHN/ddddocr-for-java)构建的java开源项目调整的单例模式依赖。
+使用方法和原版一致，持续更新中~
 
 ## 基本使用
 目前只支持了ddddocr的OCR功能，使用了`common_old.onnx`模型。可以通过`mvn install`安装项目或者使用[github packages源](https://github.com/GCS-ZHN/ddddocr-for-java/packages)，并添加maven依赖。
@@ -56,9 +57,3 @@ public class Test {
 }
 ```
 
-## 声明
-模型版权归原作者[sml2h3](https://github.com/sml2h3)所有，仅供学习交流使用，任何问题欢迎发issue。
-
-
-## 温馨提示
-编译版本使用java 11编译，字节码版本号为55，低版本java使用会报错，可以选择克隆本项目手动打包或者升级java（PS：java都17了，别坚守java 1.8了）。
