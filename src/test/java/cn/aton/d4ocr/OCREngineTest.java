@@ -13,11 +13,12 @@
  * See the License for the specific language govering permissions and
  * limitations under the License.
  */
-package top.gcszhn.d4ocr;
+package cn.aton.d4ocr;
 
 import org.junit.Before;
 import org.junit.Test;
-import top.gcszhn.d4ocr.utils.IOUtils;
+
+import cn.aton.d4ocr.utils.IOUtils;
 
 import java.awt.image.BufferedImage;
 import java.io.IOException;

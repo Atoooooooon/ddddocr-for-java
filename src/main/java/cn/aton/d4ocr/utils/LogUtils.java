@@ -13,7 +13,7 @@
  * See the License for the specific language govering permissions and
  * limitations under the License.
  */
-package top.gcszhn.d4ocr.utils;
+package cn.aton.d4ocr.utils;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

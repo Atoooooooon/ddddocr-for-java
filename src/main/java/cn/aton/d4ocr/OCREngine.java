@@ -13,7 +13,7 @@
  * See the License for the specific language govering permissions and
  * limitations under the License.
  */
-package top.gcszhn.d4ocr;
+package cn.aton.d4ocr;
 
 import java.awt.image.BufferedImage;
 
