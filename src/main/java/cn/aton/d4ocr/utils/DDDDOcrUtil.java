@@ -40,8 +40,8 @@ public class DDDDOcrUtil {
      */
     public static String getCode(String base64) {
         byte[] bytes = Base64.getDecoder().decode(base64);
-        ByteArrayInputStream bis = new ByteArrayInputStream(bytes);
-        try {
+
+        try(ByteArrayInputStream bis = new ByteArrayInputStream(bytes)) {
             BufferedImage bufferedImage = ImageIO.read(bis);
             return ocrEngine.recognize(bufferedImage);
         } catch (Exception e) {
