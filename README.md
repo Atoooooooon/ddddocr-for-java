@@ -16,18 +16,19 @@
    <repositories>
         <repository>
             <id>github</id>
-            <url>https://maven.pkg.github.com/gcs-zhn/ddddocr-for-java</url>
+            <url>https://maven.pkg.github.com/Atoooooooon/ddddocr-for-java</url>
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
         </repository>
     </repositories>
     <dependencies>
-       <dependency>
-           <groupId>top.gcszhn</groupId>
-           <artifactId>d4ocr</artifactId>
-           <version>1.0</version>
-       </dependency>
+        <!-- d4ocr-java 验证码识别 -->
+        <dependency>
+            <groupId>io.github.atoooooooon</groupId>
+            <artifactId>d4ocr</artifactId>
+            <version>1.0.1</version>
+        </dependency>
     </dependencies>
 ```
 同时github的maven registry要求[登录认证](https://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException)，即只允许github用户下载，不像maven中央仓库无需注册即可下载。具体配置有[官方文档](https://docs.github.com/cn/packages/working-with-a-github-packages-registry/working-with-the-apache-maven-registry)，主要是在`settings.xml`中配置server，注意token不是登录密码，需要自行创建，[快捷链接](https://github.com/settings/tokens)。
